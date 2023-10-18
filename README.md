@@ -1,24 +1,53 @@
 # PricerUpdater
 
-### Desafio - Shopper
+## Desafio Shopper
 
-<img src = "src\assets\screencapture.png"><br>
+![Screencapture](src/assets/screencapture.png)
 
-PricerUpdater é uma aplicação web onde você pode utilizar um arquivo .csv para atualizar um lote de produtos de uma unica vez. Este arquivo .csv precisa obedecer algumas regras para que ele possa ser utilizado: <br><br>
-o Todos os campos necessários existem?<br>
-o Os códigos de produtos informados existem?<br>
-o Os preços estão preenchidos e são valores numéricos validos.?<br>
-o Os preços de atualização dos produtos ficarão abaixo do custo deles?<br>
-o O valor de reajuste para mais ou para menos ultrapassa 10% do preço atual do produto?<br>
+O PricerUpdater é uma aplicação web que permite atualizar em lote os produtos a partir de um arquivo .csv. No entanto, é importante observar algumas regras para garantir que o processo seja bem-sucedido:
+
+- **Todos os campos necessários existem?** Certifique-se de que o arquivo .csv contenha todos os campos obrigatórios.
+
+- **Os códigos de produtos informados existem?** Verifique se os códigos dos produtos mencionados no arquivo .csv estão corretos e existem no banco de dados.
+
+- **Os preços estão preenchidos e são valores numéricos válidos?** Garanta que os preços listados no arquivo .csv sejam numéricos e preenchidos corretamente.
+
+- **Os preços de atualização dos produtos ficarão abaixo do custo deles?** Evite definir preços de atualização que sejam menores do que o custo dos produtos.
+
+- **O valor de reajuste, para mais ou para menos, ultrapassa 10% do preço atual do produto?** Certifique-se de que os ajustes de preço não excedam 10% do valor atual do produto.
 
 ## Tutorial
 
-1. Acesse o endereço https://github.com/raonicerqueira/desafio-shopper-server<br>
-2. Faça download da API contida no projeto acima no seu desktop.<br>
-3. Abra o projeto usando o VSCode https://code.visualstudio.com/ (link para download caso não possua o VSCode instalado no seu desktop).<br>
-4. Execute o comando "npm run dev" no seu terminal localizado dentro da pasta do projeto para inicializar a API, se estiver tudo correto, deverá aparecer a mensagem "Server is running...".<br>
-5. Acesse o endereço https://github.com/raonicerqueira/desafio-shopper<br>
-6. Faça download do projeto acima no seu desktop.<br>
-7. Execute o comando"npm install" e depois "npm run dev" no seu terminal localizado dentro da pasta do projeto para inicializar a aplicação web, se estiver tudo correto, deverá aparecer o endereço do localhost, na porta 3000.<br>
-8. Deverá ser instalado um banco de dados MYSQL, com a database "estoque", usuário e senha "root". Na pasta assets existe um arquivo database.sql que pode ser utilizado para a criação do BD.<br>
-9. Pronto, já pode utilizar um arquivo .csv para fazer a atualização dos preços dos produtos armazenados no banco de dados, lembrando que é necessário que o .csv esteja com no mesmo modelo do arquivo anexado à pasta assets do projeto.<br>
+### Passos para Executar o Projeto:
+
+1. **Clone o Repositório da API:**
+
+   Acesse o repositório da API em [raonicerqueira/desafio-shopper-server](https://github.com/raonicerqueira/desafio-shopper-server) e clone o projeto para o seu desktop.
+
+2. **Abra o Projeto no VSCode:**
+
+   Utilize o Visual Studio Code (VSCode) para abrir o projeto. Caso não tenha o VSCode instalado, você pode baixá-lo [aqui](https://code.visualstudio.com/).
+
+3. **Inicialize a API:**
+
+   Abra um terminal na pasta do projeto e execute o comando `npm run dev`. Se tudo estiver configurado corretamente, você verá a mensagem "Server is running...".
+
+4. **Clone o Projeto PricerUpdater:**
+
+   Acesse o repositório do PricerUpdater em [raonicerqueira/desafio-shopper](https://github.com/raonicerqueira/desafio-shopper) e clone o projeto para o seu desktop.
+
+5. **Inicialize a Aplicação Web:**
+
+   Abra um terminal na pasta do projeto PricerUpdater e execute os comandos `npm install` seguido por `npm run dev`. A aplicação web deverá iniciar, e o endereço local será exibido na porta 3000.
+
+6. **Banco de Dados MySQL:**
+
+   É necessário configurar um banco de dados MySQL chamado "estoque" com o usuário e senha "root". Na pasta "assets," você encontrará um arquivo chamado "database.sql" que pode ser utilizado para criar o banco de dados.
+
+7. **Utilize o Arquivo .csv:**
+
+   Agora você está pronto para usar um arquivo .csv para atualizar os preços dos produtos armazenados no banco de dados. Certifique-se de que o arquivo .csv siga o mesmo modelo do arquivo na pasta "assets" do projeto.
+
+Dessa forma, você poderá aproveitar o PricerUpdater para atualizar seus produtos de forma eficiente e controlada. Se tiver alguma dúvida ou precisar de assistência, não hesite em entrar em contato.
+
+**Divirta-se atualizando seus preços!**
